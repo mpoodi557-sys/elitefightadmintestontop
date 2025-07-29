@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elite Fight Admin Test</title>
+  <style>
+    body {
+      background-color: #1c1c1c;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #ccc;
+    }
+    .question {
+      background-color: #2e2e2e;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    .question h3 {
+      margin-bottom: 10px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+    button {
+      background-color: #444;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+    button:hover {
+      background-color: #666;
+    }
+    #result {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 30px;
+      color: #7fff7f;
+    }
+  </style>
+</head>
+<body>
+  <h1>اختبار Elite Fight Admin</h1>
+
+  <form id="quizForm">
+    <!-- Questions start -->
+    <div class="question">
+      <h3>1. وش أهم دور للإداري أثناء الفايتات؟</h3>
+      <label><input type="radio" name="q1" value="1" /> الفوز على اللاعبين</label>
+      <label><input type="radio" name="q1" value="correct" /> مراقبة النزالات وضبط القوانين</label>
+      <label><input type="radio" name="q1" value="1" /> تشجيع أحد الفرق</label>
+      <label><input type="radio" name="q1" value="1" /> إعطاء أسلحة</label>
+    </div>
+
+    <div class="question">
+      <h3>2. متى يحق للإداري التدخل في الفايت؟</h3>
+      <label><input type="radio" name="q2" value="1" /> إذا كان طفشان</label>
+      <label><input type="radio" name="q2" value="1" /> إذا طلب منه صديقه</label>
+      <label><input type="radio" name="q2" value="correct" /> إذا شاف مخالفة أو خرق للقوانين</label>
+      <label><input type="radio" name="q2" value="1" /> إذا خسر فريقه</label>
+    </div>
+
+    <div class="question">
+      <h3>3. قانون الـ Re-Engage يمنع:</h3>
+      <label><input type="radio" name="q3" value="1" /> تبديل الملابس</label>
+      <label><input type="radio" name="q3" value="correct" /> الرجوع للفايت بعد الموت</label>
+      <label><input type="radio" name="q3" value="1" /> استخدام الراديو</label>
+      <label><input type="radio" name="q3" value="1" /> التصوير</label>
+    </div>
+
+    <div class="question">
+      <h3>4. واحد دخل الفايت بدون سبب، كإداري وش تسوي؟</h3>
+      <label><input type="radio" name="q4" value="1" /> تتجاهله</label>
+      <label><input type="radio" name="q4" value="1" /> تنقله لمنطقة آمنة</label>
+      <label><input type="radio" name="q4" value="correct" /> تحذره وإذا كررها تعطيه عقوبة</label>
+      <label><input type="radio" name="q4" value="1" /> تخليه يكمل</label>
+    </div>
+
+    <div class="question">
+      <h3>5. وش المفروض تسوي لو أحد اللاعبين اشتكى من قروب يستخدم هاكات؟</h3>
+      <label><input type="radio" name="q5" value="1" /> تضحك</label>
+      <label><input type="radio" name="q5" value="1" /> تعطيه باند</label>
+      <label><input type="radio" name="q5" value="correct" /> تحقق بالتصوير والدلائل</label>
+      <label><input type="radio" name="q5" value="1" /> تهاوش مع القروب</label>
+    </div>
+
+    <div class="question">
+      <h3>6. هل يجوز استخدام السيارة داخل الفايت؟</h3>
+      <label><input type="radio" name="q6" value="1" /> نعم بأي وقت</label>
+      <label><input type="radio" name="q6" value="1" /> ممنوع نهائيًا</label>
+      <label><input type="radio" name="q6" value="correct" /> يجوز فقط إذا كان القتال خارجي ومسموح به</label>
+      <label><input type="radio" name="q6" value="1" /> فقط للزينة</label>
+    </div>
+
+    <div class="question">
+      <h3>7. إذا لاعب قتل فريق كامل بثانية وحدة، وش تسوي؟</h3>
+      <label><input type="radio" name="q7" value="1" /> تقول له GG</label>
+      <label><input type="radio" name="q7" value="1" /> تطرده</label>
+      <label><input type="radio" name="q7" value="correct" /> تراجع التسجيل أو تطلب تصوير للتحقق</label>
+      <label><input type="radio" name="q7" value="1" /> تعطيه باند فورًا بدون تحقق</label>
+    </div>
+
+    <div class="question">
+      <h3>8. متى يعتبر الفايت 'انتهى' رسميًا؟</h3>
+      <label><input type="radio" name="q8" value="1" /> إذا خلصت ذخيرة الفريق</label>
+      <label><input type="radio" name="q8" value="1" /> إذا طلع أحد اللاعبين</label>
+      <label><input type="radio" name="q8" value="correct" /> إذا تم القضاء على جميع أعضاء أحد الفرق</label>
+      <label><input type="radio" name="q8" value="1" /> إذا ملّوا</label>
+    </div>
+
+    <div class="question">
+      <h3>9. وش الإجراء المناسب إذا صار سب أو عنصرية أثناء الفايت؟</h3>
+      <label><input type="radio" name="q9" value="1" /> تتجاهل</label>
+      <label><input type="radio" name="q9" value="correct" /> تحذر الطرف المخطئ وإذا كررها تعاقبه</label>
+      <label><input type="radio" name="q9" value="1" /> تطرد الفريق كامل</label>
+      <label><input type="radio" name="q9" value="1" /> تسجلها وتضحك</label>
+    </div>
+
+    <div class="question">
+      <h3>10. كم مرة يقدر اللاعب يرجع للفايت بعد موته؟</h3>
+      <label><input type="radio" name="q10" value="1" /> 3 مرات</label>
+      <label><input type="radio" name="q10" value="correct" /> مرة وحدة</label>
+      <label><input type="radio" name="q10" value="1" /> ولا مرة</label>
+      <label><input type="radio" name="q10" value="1" /> حسب مزاجه</label>
+    </div>
+
+    <div class="question">
+      <h3>11. هل يحق للإداري يلعب داخل الفايت كـ لاعب؟</h3>
+      <label><input type="radio" name="q11" value="1" /> نعم بدون شروط</label>
+      <label><input type="radio" name="q11" value="correct" /> فقط إذا أعلن خروجه من وضع الإدارة</label>
+      <label><input type="radio" name="q11" value="1" /> لا نهائيًا</label>
+      <label><input type="radio" name="q11" value="1" /> فقط إذا فريقه ناقص</label>
+    </div>
+
+    <div class="question">
+      <h3>12. الهدف من وجود قوانين الفايت هو:</h3>
+      <label><input type="radio" name="q12" value="1" /> زيادة الحماس</label>
+      <label><input type="radio" name="q12" value="1" /> التحكم بالناس</label>
+      <label><input type="radio" name="q12" value="correct" /> ضمان عدالة التنافس</label>
+      <label><input type="radio" name="q12" value="1" /> تعقيد اللعب</label>
+    </div>
+
+    <div class="question">
+      <h3>13. متى تستخدم الـ Replay كدليل إداري؟</h3>
+      <label><input type="radio" name="q13" value="1" /> وقت الفراغ</label>
+      <label><input type="radio" name="q13" value="correct" /> إذا صار عندك شك بمخالفة</label>
+      <label><input type="radio" name="q13" value="1" /> بعد كل فايت</label>
+      <label><input type="radio" name="q13" value="1" /> لما تبغى تصور مقطع تيك توك</label>
+    </div>
+
+    <div class="question">
+      <h3>14. أفضل طريقة لمنع المشاكل داخل الفايتات:</h3>
+      <label><input type="radio" name="q14" value="1" /> منع الفايتات</label>
+      <label><input type="radio" name="q14" value="1" /> إهمال القوانين</label>
+      <label><input type="radio" name="q14" value="correct" /> وجود إدارة نشطة وتطبيق صارم للقوانين</label>
+      <label><input type="radio" name="q14" value="1" /> إعطاء الجميع صلاحيات</label>
+    </div>
+
+    <!-- Submit -->
+    <button type="button" onclick="checkAnswers()">إظهار النتيجة</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    function checkAnswers() {
+      const answers = document.querySelectorAll('input[type=radio]:checked');
+      let score = 0;
+      answers.forEach(ans => {
+        if (ans.value === "correct") score++;
+      });
+      document.getElementById("result").innerText = `درجتك: ${score} من 14`;
+    }
+  </script>
+</body>
+</html>
