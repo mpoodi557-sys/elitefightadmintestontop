@@ -57,12 +57,12 @@
         <div class="row row-2">
           <div>
             <label for="name">اسم المقدم <span class="req">*</span></label>
-            <input id="name" name="اسم المقدم" type="text" required placeholder="اكتب اسمك الثلاثي" />
+            <input id="name" name="اسم المقدم" type="text" required placeholder="" />
             <div class="error" id="err-name">هذا الحقل إلزامي.</div>
           </div>
           <div>
             <label for="age">عمر المقدم <span class="req">*</span></label>
-            <input id="age" name="عمر المقدم" type="number" inputmode="numeric" min="10" max="99" required placeholder="مثال: 18" />
+            <input id="age" name="عمر المقدم" type="number" inputmode="numeric" min="10" max="99" required placeholder=" " />
             <div class="muted">الحد الأدنى 16 سنوات.</div>
             <div class="error" id="err-age">أدخل رقمًا صحيحًا بين 10 و 99.</div>
           </div>
